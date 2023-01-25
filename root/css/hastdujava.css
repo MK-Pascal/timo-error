@@ -1,0 +1,93 @@
+:root {
+    --dark: #090909;
+    --back: #121212;
+    --intern: #121212;
+    --inter2: #181818;
+    --action: #1FDF64;
+    --action2: #127737;
+    --text: #FFFFFF;
+
+}
+*{
+    font-family: 'GothamBold';
+}
+body{
+    background: var(--dark);
+
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url(../font/GothamBold.ttf);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centerX{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.id{
+    z-index: 12;
+}
+.mainbox{
+    position: fixed;
+    top: 45%;
+    height: 450px;
+    width: 95%;
+    background: var(--back);
+    border: none;
+    border-radius: 15px;
+}
+.nojava{
+    top: 65%;
+    color: var(--text);
+    text-align: center;
+}
+.btn{
+    top: 93%;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background: var(--action);
+    color: var(--text);
+    transition: 250ms;
+}
+.btn:hover{
+    width: 85px;
+    background: var(--action2);
+}
+.nope{
+    height: 250px;
+    top: 30%;
+    transition: 250ms;
+
+}
+footer{
+    top: 90%;
+    color: var(--text);
+    text-align: center;
+}
+@media(max-width: 390px){
+    .nope{
+        height: 200px;
+        top: 30%;
+    }
+    .nojava{
+        font-size: 16px;
+        text-align: center;
+    }
+    footer{
+        top: 90%;
+        color: var(--text);
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+
